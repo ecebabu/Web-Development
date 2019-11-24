@@ -1,3 +1,60 @@
+# Larticles Laravel/Vue App
+
+> Laravel 5.5 API that uses the API resources with a Vue.js frontend
+
+## Quick Start
+
+``` bash
+# Install Dependencies
+composer install
+
+# Run Migrations
+php artisan migrate
+
+# Import Articles
+php artisan db:seed
+
+# Add virtual host if using Apache
+
+# If you get an error about an encryption key
+php artisan key:generate
+
+# Install JS Dependencies
+npm install
+
+# Watch Files
+npm run watch
+```
+
+## Endpoints
+
+### List all todos with links and meta
+``` bash
+GET api/todo
+```
+### Get single todo
+``` bash
+GET api/todo/{id}
+```
+
+### Delete todo
+``` bash
+DELETE api/todo/{id}
+```
+
+### Add todo
+``` bash
+POST api/todo
+title/description
+```
+
+### Update todo
+``` bash
+PUT api/todo
+todo_id/title/description
+```
+
+---------------------------------------------------------------------------
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
