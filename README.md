@@ -1,6 +1,6 @@
-# Larticles Laravel/Vue App
+# Todo List Laravel/Vue App
 
-> Laravel 5.5 API that uses the API resources with a Vue.js frontend
+> Laravel API that uses the API resources with a Vue.js frontend
 
 ## Quick Start
 
@@ -11,7 +11,7 @@ composer install
 # Run Migrations
 php artisan migrate
 
-# Import Articles
+# Import Todo
 php artisan db:seed
 
 # Add virtual host if using Apache
@@ -29,27 +29,26 @@ npm run watch
 ## Endpoints
 
 ### List all todos with links and meta
-``` bash
 GET api/todo
 ```
 ### Get single todo
-``` bash
+
 GET api/todo/{id}
 ```
 
 ### Delete todo
-``` bash
+
 DELETE api/todo/{id}
 ```
 
 ### Add todo
-``` bash
+
 POST api/todo
 title/description
 ```
 
 ### Update todo
-``` bash
+
 PUT api/todo
 todo_id/title/description
 ```
